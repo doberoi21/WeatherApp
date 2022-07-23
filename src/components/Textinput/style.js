@@ -5,7 +5,7 @@ export const style = StyleSheet.create({
     height: 50,
     marginTop: 60,
     marginHorizontal: 25,
-    borderRadius: 10,
+    borderRadius: 5,
     justifyContent:'center'
   },
   inputText: {
