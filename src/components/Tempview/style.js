@@ -11,6 +11,12 @@ export const style = StyleSheet.create({
   cityName: {
     fontSize: 35,
     fontWeight: '600',
-    marginVertical: 20,
+    marginVertical: 10,
+    color:'white'
+  },
+  temp: {
+    fontSize: 60,
+    fontWeight: '600',
+    color:'white'
   },
 });

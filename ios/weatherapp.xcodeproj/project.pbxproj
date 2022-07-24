@@ -31,6 +31,7 @@
 		F4C4253C288C12CE0099CBCD /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4C4252B288C12CE0099CBCD /* MaterialCommunityIcons.ttf */; };
 		F4C4253D288C12CE0099CBCD /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4C4252C288C12CE0099CBCD /* FontAwesome.ttf */; };
 		F4C4253E288C12CE0099CBCD /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4C4252D288C12CE0099CBCD /* Poppins-SemiBold.ttf */; };
+		F4F70C1A288D4D440059F67D /* weather-app.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F70C19288D4D440059F67D /* weather-app.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		F4C4252B288C12CE0099CBCD /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
 		F4C4252C288C12CE0099CBCD /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		F4C4252D288C12CE0099CBCD /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		F4F70C18288D4D430059F67D /* weatherapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weatherapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4F70C19288D4D440059F67D /* weather-app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "weather-app.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				F4F70C19288D4D440059F67D /* weather-app.swift */,
+				F4F70C18288D4D430059F67D /* weatherapp-Bridging-Header.h */,
 			);
 			name = weatherapp;
 			sourceTree = "<group>";
@@ -266,7 +271,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -489,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				F4F70C1A288D4D440059F67D /* weather-app.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-weatherapp-weatherappTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -535,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-weatherapp-weatherappTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = weatherappTests/Info.plist;
@@ -575,6 +583,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = weatherapp;
+				SWIFT_OBJC_BRIDGING_HEADER = "weatherapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -600,6 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = weatherapp;
+				SWIFT_OBJC_BRIDGING_HEADER = "weatherapp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
